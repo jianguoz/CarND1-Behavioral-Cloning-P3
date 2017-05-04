@@ -48,7 +48,7 @@ Using the Udacity provided simulator and my drive.py file, the car can be driven
 python drive.py model.h5
 ```
 
-#### 3. Project code is usable and readable
+#### 2. Project code is usable and readable
 
 The model.py file contains the code for training and saving the convolution neural network. The file shows the pipeline I used for training and validating the model, and it contains comments to explain how the code works.
 
@@ -58,7 +58,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 For my model, I modify the [Nvidia End to End learning Architecture](https://arxiv.org/pdf/1604.07316.pdf), where my image shape is (160, 320, 3). The model consists of 5 convolution neural layers with 5x5 and 3x3 filter sizes and depths between 24 and 64, there are also 3 full connected layer, the output of final layer is 1(model.py lines 76-88).
 
-The model includes RELU layers to introduce nonlinearity, the data is normalized and cropping in the model using a Keras lambda layer and cropping method(code line 77-78). 
+The model includes ELU layers to introduce nonlinearity, the data is normalized and cropping in the model using a Keras lambda layer and cropping method(code line 77-78). we use the activation function ELU instead of RELU, The benefits of ELU's over ReLU's have been published in the [FAST AND ACCURATE DEEP NETWORK LEARNING BY EXPONENTIAL LINEAR UNITS ELUS](https://arxiv.org/pdf/1511.07289v1.pdf).
 
 #### 2. Attempts to reduce overfitting in the model
 
@@ -160,7 +160,7 @@ The simulator can be downloaded from the classroom. In the classroom, we have al
 
 ## Details About Files In This Directory
 
-### `drive.py`
+### drive.py
 
 Usage of `drive.py` requires you have saved the trained model as an h5 file, i.e. `model.h5`. See the [Keras documentation](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) for how to create this file using the following command:
 ```sh
