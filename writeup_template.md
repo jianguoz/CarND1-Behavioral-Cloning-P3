@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/model_visualization.jpg "Model Visualization"
+[image1]: ./examples/nVidia_model.jpg "Model Visualization"
 [image7]: https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow/blob/master/lenet.png "Grayscaling"
 [image2]: ./examples/center_2017_05_04_00_08_13_140.jpg "Center Image"
 [image3]: ./examples/center_2017_05_04_00_08_13_140.jpg "Center Image"
@@ -90,17 +90,7 @@ My first step was to use a convolution neural network model similar to the [LeNe
 
 ![alt text][image7]
 
-In order to gauge how well the model was working, I split my image and steering angle data into a training and validation set. I found that my first model had a low mean squared error on the training set but a high mean squared error on the validation set. This implied that the model was overfitting. 
-
-To combat the overfitting, I modified the model so that ...
-
-Then I ... 
-
-The final step was to run the simulator to see how well the car was driving around track one. There were a few spots where the vehicle fell off the track... to improve the driving behavior in these cases, I ....
-
-At the end of the process, the vehicle is able to drive autonomously around the track without leaving the road.
-
-####2. Final Model Architecture
+#### 2. Final Model Architecture
 
 The final model architecture (model.py lines 76-88) consisted of 4 convolution neural networks with the following layers and layer sizes shows as the image, where the final layer output is 1. 
 
