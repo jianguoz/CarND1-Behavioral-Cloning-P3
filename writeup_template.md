@@ -88,8 +88,9 @@ The overall strategy for deriving a model architecture was to ...
 
 My first step was to use a convolution neural network model similar to the [LeNet](https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow), I thought this model might be appropriate because it has been used successfully in many image related tasks. When I test the network, the car easily drive outside of roads, I think the failure reason are LeNet is not enough deep, it only consists of two convolutional layers, besides, the filters size maybe also not enough to deal with a (160, 320,3) size image.  
 
-
+<div align=center>
 <img src="https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow/blob/master/lenet.png?raw=true" width="600px">
+</div>
 
 #### 2. Final Model Architecture
 
@@ -97,18 +98,21 @@ The final model architecture (model.py lines 76-88) consisted of 4 convolution n
 
 Here is a visualization of the architecture (note: the final layer is 1)
 
-
+<div align=center>
 <img src="./examples/model_visualization.jpg?raw=true" width="600px">
+</div>
 
-####3. Creation of the Training Set & Training Process
+#### 3. Creation of the Training Set & Training Process
 
 To capture good driving behavior, I first recorded two laps on track one using center lane driving. Here is an example image of center lane driving:
 
-![alt text][image2]
-
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to how to come back to center when drive toward offline. These images show what a recovery looks like starting from ... :
 <div align=center>
+![alt text][image2]
+</div>
 
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to how to come back to center when drive toward offline. These images show what a recovery looks like:
+
+<div align=center>
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
@@ -118,10 +122,14 @@ Then I repeated this process on track two in order to get more data points.
 
 To augment the data sat, Firstly, I use multiple cameras, I randomly choose one image among ['center', 'left', 'right'] for each line(code line 37-43), I add a correction to 'left' image and substract a correction to 'right'image, where the correction value need to be tuned. I also randomly flipped images and angles(model.py code line 49-54) thinking that this would make the data more comprehensive and unbiased. For example, here is an image that has then been flipped:
 
+<div align=center>
 <img src="./examples/multiple_cameras.jpg?raw=true" width="600px">
+</div>
 
+<div align=center>
 ![alt text][image6]
 ![alt text][image7]
+</div>
 
 With flipped images, it looks like the car drive in a opposite direction.
 
