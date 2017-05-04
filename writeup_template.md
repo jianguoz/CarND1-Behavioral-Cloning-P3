@@ -18,7 +18,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./examples/nVidia_model.jpg "Model Visualization"
+[image1]: ./examples/nVidia_model.png "Model Visualization"
 [image7]: https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow/blob/master/lenet.png "Grayscaling"
 [image2]: ./examples/center_2017_05_04_00_08_13_140.jpg "Center Image"
 [image3]: ./examples/center_2017_05_04_00_08_13_140.jpg "Center Image"
