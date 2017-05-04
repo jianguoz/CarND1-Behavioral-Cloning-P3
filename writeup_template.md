@@ -115,7 +115,7 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 <img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
 <img src="./examples/center_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
-<img src="./examples/center_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
+<img src="./examples/right_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
 </div>
 
 Then I repeated this process on track two in order to get more data points.
