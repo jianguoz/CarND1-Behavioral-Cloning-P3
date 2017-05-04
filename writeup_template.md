@@ -113,10 +113,9 @@ I then recorded the vehicle recovering from the left side and right sides of the
 
 <div align=center>
 
-![alt text][image3]
-![alt text][image4]
-![alt text][image5]
-
+<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
+<img src="./examples/center_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
+<img src="./examples/center_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
 </div>
 
 Then I repeated this process on track two in order to get more data points.
@@ -136,12 +135,7 @@ To augment the data sat, Firstly, I use multiple cameras, I randomly choose one 
 
 </div>
 
-<div align=center>
 
-<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
-<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
-<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="290" height="160" />
-</div>
 
 With flipped images, it looks like the car drive in an opposite direction.
 
