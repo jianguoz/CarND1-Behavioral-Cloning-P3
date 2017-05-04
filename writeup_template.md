@@ -10,7 +10,7 @@
 
 The goals / steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
-* Build, a convolution neural network in Keras that predicts steering angles from images
+* Build a convolution neural network in Keras that predicts steering angles from images
 * Train and validate the model with a training and validation set
 * Test that the model successfully drives around track one without leaving the road
 * Summarize the results with a written report
@@ -60,7 +60,7 @@ The model.py file contains the code for training and saving the convolution neur
 
 #### 1. An appropriate model architecture has been employed
 
-For my model, I modify the [Nvidia End to End learning Architecture](https://arxiv.org/pdf/1604.07316.pdf), where my image shape is (160, 320, 3). The model consists of 5 convolution neural networks with 5x5 and 3x3 filter sizes and depths between 24 and 64, there are also 3 full connected layer, the output of final layer is 1(model.py lines 76-88).
+For my model, I modify the [Nvidia End to End learning Architecture](https://arxiv.org/pdf/1604.07316.pdf), where my image shape is (160, 320, 3). The model consists of 5 convolution neural layers with 5x5 and 3x3 filter sizes and depths between 24 and 64, there are also 3 full connected layer, the output of final layer is 1(model.py lines 76-88).
 
 The model includes RELU layers to introduce nonlinearity, the data is normalized and cropping in the model using a Keras lambda layer and cropping method(code line 77-78). 
 
@@ -92,7 +92,7 @@ My first step was to use a convolution neural network model similar to the [LeNe
 
 #### 2. Final Model Architecture
 
-The final model architecture (model.py lines 76-88) consisted of 4 convolution neural networks with the following layers and layer sizes shows as the image, where the final layer output is 1. 
+The final model architecture (model.py lines 76-88) consisted of a convolution neural network with the following layers and layer sizes shows as the image, where the final layer output is 1. 
 
 Here is a visualization of the architecture (note: the final layer is 1)
 
