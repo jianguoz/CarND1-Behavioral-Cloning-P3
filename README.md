@@ -1,5 +1,5 @@
 # Behaviorial Cloning Project
-** Jianguo Zhang, May 03, 2017**
+**Jianguo Zhang, May 03, 2017**
 
 Overview
 ---
