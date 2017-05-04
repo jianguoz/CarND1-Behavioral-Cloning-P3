@@ -1,6 +1,6 @@
 # **Behavioral Cloning** 
 
-## Writeup Template
+## Jianguo Zhang
 
 ### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
 
@@ -76,15 +76,13 @@ The model used an adam optimizer, so the learning rate was not tuned manually (m
 
 #### 4. Appropriate training data
 
-Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road ... 
+Training data was chosen to keep the vehicle driving on the road. I used a combination of center lane driving, recovering from the left and right sides of the road and flipped images.
 
 For details about how I created the training data, see the next section. 
 
 ### Model Architecture and Training Strategy
 
 #### 1. Solution Design Approach
-
-The overall strategy for deriving a model architecture was to ...
 
 My first step was to use a convolution neural network model similar to the [LeNet](https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow), I thought this model might be appropriate because it has been used successfully in many image related tasks. When I test the network, the car easily drive outside of roads, I think the failure reason are LeNet is not enough deep, it only consists of two convolutional layers, besides, the filters size maybe also not enough to deal with a (160, 320,3) size image.  
 
@@ -111,13 +109,14 @@ To capture good driving behavior, I first recorded two laps on track one using c
 ![alt text][image2]
 </div>
 
-I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to how to come back to center when drive toward offline. These images show what a recovery looks like:
+I then recorded the vehicle recovering from the left side and right sides of the road back to center so that the vehicle would learn to how to come back to center when drivinh toward outside of roads. These images show what a recovery looks like:
 
 <div align=center>
 
 ![alt text][image3]
 ![alt text][image4]
 ![alt text][image5]
+
 </div>
 
 Then I repeated this process on track two in order to get more data points.
@@ -127,19 +126,21 @@ To augment the data sat, Firstly, I use multiple cameras, I randomly choose one 
 <div align=center>
 
 <img src="./examples/multiple_cameras.jpg?raw=true" width="600px">
+
 </div>
 
 <div align=center>
 
 ![alt text][image6]
 ![alt text][image7]
+
 </div>
 
 With flipped images, it looks like the car drive in a opposite direction.
 
-After the collection process, I had 12673 number of data points. each data point consists of center, left and right image. I then preprocessed this data by randomly choose ['center', 'left', 'right'] image for each image and randomly flip images, note that each time the output are same for each batch size. 
+After the collection process, I had 12673 number of data points. each data point consists of center, left and right image. I then preprocessed this data by randomly choose a image from ['center', 'left', 'right'] images for each image and randomly flip images, note that each time the output are same for each batch size. 
 
 
 I finally randomly shuffled the data set and put 20% of the data into a validation set. 
 
-I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was Z as evidenced by 2 I used an adam optimizer so that manually training the learning rate wasn't necessary.
+I used this training data for training the model. The validation set helped determine if the model was over or under fitting. The ideal number of epochs was 2 as the batch size is small. I used an adam optimizer so that manually training the learning rate wasn't necessary.
