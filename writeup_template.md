@@ -70,7 +70,7 @@ I set the epoches as 2(model.py code line 94) and batch size as 32(code line 66-
 
 The model was trained and validated on different data sets to ensure that the model was not overfitting (code line 20-60) as each image maybe flipped and changed steering angle. The model was tested by running it through the simulator and ensuring that the vehicle could stay on the track.
 
-####3. Model parameter tuning
+#### 3. Model parameter tuning
 
 The model used an adam optimizer, so the learning rate was not tuned manually (model.py line 90).
 
