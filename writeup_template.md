@@ -136,7 +136,7 @@ To augment the data sat, Firstly, I use multiple cameras, I randomly choose one 
 
 </div>
 
-With flipped images, it looks like the car drive in a opposite direction.
+With flipped images, it looks like the car drive in an opposite direction.
 
 After the collection process, I had 12673 number of data points. each data point consists of center, left and right image. I then preprocessed this data by randomly choose a image from ['center', 'left', 'right'] images for each image and randomly flip images, note that each time the output are same for each batch size. 
 
