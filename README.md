@@ -1,6 +1,5 @@
 # Behaviorial Cloning Project
-
-[![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
+## Jianguo Zhang, May 03, 2017
 
 Overview
 ---
@@ -160,7 +159,7 @@ The simulator can be downloaded from the classroom. In the classroom, we have al
 
 ## Details About Files In This Directory
 
-### drive.py
+### `drive.py`
 
 Usage of `drive.py` requires you have saved the trained model as an h5 file, i.e. `model.h5`. See the [Keras documentation](https://keras.io/getting-started/faq/#how-can-i-save-a-keras-model) for how to create this file using the following command:
 ```sh
