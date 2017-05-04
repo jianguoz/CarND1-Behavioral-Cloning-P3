@@ -19,7 +19,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./examples/nVidia_model.png "Model Visualization"
-[image7]: https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow/blob/master/lenet.png "Grayscaling"
+[image9]: https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow/blob/master/lenet.png "Grayscaling"
 [image2]: ./examples/center_2017_05_04_00_08_13_140.jpg "Center Image"
 [image3]: ./examples/center_2017_05_04_00_08_13_140.jpg "Center Image"
 [image4]: ./examples/left_2017_05_04_00_08_13_140.jpg "Left Image"
@@ -88,7 +88,8 @@ The overall strategy for deriving a model architecture was to ...
 
 My first step was to use a convolution neural network model similar to the [LeNet](https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow), I thought this model might be appropriate because it has been used successfully in many image related tasks. When I test the network, the car easily drive outside of roads, I think the failure reason are LeNet is not enough deep, it only consists of two convolutional layers, besides, the filters size maybe also not enough to deal with a (160, 320,3) size image.  
 
-![alt text][image7]
+
+<img src="https://github.com/JianguoZhang1994/LeNet-written-by-tensorflow/blob/master/lenet.png?raw=true" width="400px">
 
 #### 2. Final Model Architecture
 
@@ -97,7 +98,7 @@ The final model architecture (model.py lines 76-88) consisted of 4 convolution n
 Here is a visualization of the architecture (note: the final layer is 1)
 
 
-<img src="./images/nVidia_model.png?raw=true" width="400px">
+<img src="./examples/nVidia_model.png?raw=true" width="400px">
 
 ####3. Creation of the Training Set & Training Process
 
