@@ -138,9 +138,9 @@ To augment the data sat, Firstly, I use multiple cameras, I randomly choose one 
 
 <div align=center>
 
-<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="250" height="160" />
-<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="250" height="160" />
-<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="250" height="160" />
+<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="270" height="160" />
+<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="270" height="160" />
+<img src="./examples/left_2017_05_04_00_08_13_140.jpg?raw=true" width="270" height="160" />
 </div>
 
 With flipped images, it looks like the car drive in an opposite direction.
