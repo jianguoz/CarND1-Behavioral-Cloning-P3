@@ -96,7 +96,8 @@ The final model architecture (model.py lines 76-88) consisted of 4 convolution n
 
 Here is a visualization of the architecture (note: the final layer is 1)
 
-![alt text][image1]
+
+<img src="./images/nVidia_model.png?raw=true" width="400px">
 
 ####3. Creation of the Training Set & Training Process
 
